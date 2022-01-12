@@ -20,8 +20,9 @@
  */
 function sumOdds(numbers) {
   // Your code here
+  return numbers.filter(number =>number%2===1 + numbers  );
 }
-// console.log(sumOdds([3, 7, 8, 15, 2, 1, 13]));
+//console.log(sumOdds([3, 7, 8, 15, 2, 1, 13]));
 
 /**
  * characterCount(string, c):
@@ -38,6 +39,7 @@ function sumOdds(numbers) {
  */
 function characterCount(string, c) {
   // Your code here
+  return lowercase().string.match(lowercase(c));
 }
 // console.log(characterCount("Character Count is clever", "c"));
 
@@ -59,6 +61,7 @@ function characterCount(string, c) {
  */
 function largestIncrement(numbers) {
   // Your code here
+  return numbers.forEach(number =>  number[1]-[0]>number[2]-number[1]);
 }
 // console.log(largestIncrement([11, 35, 52, 14, 56, 601, 777, 888, 999]));
 
@@ -74,7 +77,8 @@ function largestIncrement(numbers) {
  * afterX([11, 35, 52, 14, 56, 601, 777, 888, 999], 52) -> [14, 56, 601, 777, 888, 999]
  */
 function afterX(numbers, x) {
-  // Your code here
+  // Your code here (passed)
+  return numbers.filter(number=>number>x);
 }
 // console.log(afterX([1, 2, 3, 4, 5, 6, 7, 8, 9], 3));
 
@@ -90,7 +94,8 @@ function afterX(numbers, x) {
  * Hint: Use string method .toUpperCase()
  */
 function abbreviate(firstName, lastName) {
-  // Your code here
+  // Your code here (passed)
+  return firstName.charAt(0).toUpperCase()+lastName.charAt(0).toUpperCase();
 }
 // console.log(abbreviate("miss", "Stephane"));
 
@@ -106,6 +111,7 @@ function abbreviate(firstName, lastName) {
  */
 function isUpperCase(string) {
   // Your code here
+  return string.isupper();
 }
 
 // console.log(isUpperCase("JCREW"));
@@ -121,7 +127,8 @@ function isUpperCase(string) {
  *
  */
 function elementInArray(numbers, x) {
-  // Your code here
+  // Your code here (passed)
+  return numbers.includes(x);
 }
 // console.log(elementInArray([5, 6, 7], 8));
 

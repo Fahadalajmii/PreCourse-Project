@@ -10,9 +10,10 @@
  */
 function generateIntegersArray(firstNumber, lastNumber) {
   const integersArray = [];
-  whille (firstNumber < lastNumber)
+  whille (firstNumber < lastNumber) 
     integersArray.push(firstNumber);
     lastNumber++;
+  
 
   return IntegersArray;
 }
